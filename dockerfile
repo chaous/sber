@@ -6,6 +6,7 @@ RUN mkdir /workfolder
 
 COPY ./* /workfolder/
 COPY ./train_ipnbs/* /workfolder/
+COPY ./models/* /workfolder/models/
 
 CMD jupyter notebook --ip 0.0.0.0 --allow-root
 
